@@ -1,0 +1,9 @@
+@import url("./basicStyles.css");
+
+article {
+  background-color: aqua;
+}
+
+main {
+  background-color: orange !important;
+}

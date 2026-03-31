@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        font-family: sans-serif;
+      }
+
+      #box1 {
+        background-color: yellow;
+      }
+      .box2 {
+        background-color: lightblue;
+      }
+      .text-color {
+        color: white;
+      }
+      div {
+        background-color: lightcoral;
+      }
+
+      #navbar,
+      .foot,
+      header {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Learn Simple Selectors</h1>
+    <!-- 
+    There are 5 types:
+    1) id
+        - used to target an element uniquely.
+        - it is denoted by # symbol in css.
+
+    2) class
+        - used to target multiple same or different elements.
+        - it is denoted by dot(.) symbol in css.
+        - we can give multiple classname to a single element
+
+    3) element
+        - used to target multiple same types of elements
+        - it is denoted by tagname
+
+    4) group
+        - used to group multiple elements and apply styling to it
+        - it is denoted by comma(,) symbole in css.
+
+    5) universal
+        - used to target all the elements of the webpage
+        - it is denoted by asterisk(*) symbol in css.
+    -->
+
+    <section id="box1">target me using id</section>
+
+    <article class="box2">target me using class</article>
+    <article class="box2 text-color">target me using class</article>
+    <aside class="box2">target me using class</aside>
+
+    <div>target me using element</div>
+
+    <nav id="navbar">I am Nav</nav>
+    <header>I am Header</header>
+    <footer class="foot">I am Footer</footer>
+  </body>
+</html>
