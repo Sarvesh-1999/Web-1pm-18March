@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a:link {
+        color: aqua;
+      }
+      a:visited {
+        color: black;
+      }
+      a:active {
+        color: yellow;
+      }
+
+      h1:hover {
+        background-color: black;
+        color: white;
+      }
+      h1:active {
+        background-color: red;
+        user-select: none;
+      }
+      button {
+        transition: 0.2s;
+      }
+      button:hover {
+        background-color: royalblue;
+        color: white;
+        transform: scale(2);
+      }
+
+      ul > li:first-child {
+        background-color: orange;
+      }
+
+      ul > li:last-child {
+        background-color: green;
+      }
+
+      ul > li:nth-child(3) {
+        background-color: blue;
+      }
+
+      article > div:first-of-type {
+        background-color: red;
+      }
+      article > div:last-of-type {
+        background-color: aqua;
+      }
+      article > div:nth-of-type(2) {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Learn Pseudo Class Selectors</h1>
+    <a href="https://www.myntra.com">Myntra</a>
+    <a href="https://www.ajio.com">Ajio</a>
+    <button>click</button>
+
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+      <li>REACT</li>
+      <li>JAVA</li>
+    </ul>
+
+    <article>
+      <section>box 1</section>
+      <div>div 1</div>
+      <section>box 2</section>
+      <div>div 2</div>
+      <section>box 3</section>
+      <div>div 3</div>
+      <section>box 4</section>
+    </article>
+  </body>
+</html>
