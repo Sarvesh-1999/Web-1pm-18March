@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* checks only for attribute not value */
+      div[name] {
+        background-color: yellow;
+      }
+
+      /* checks attribute with exact value */
+      div[name="box wrapper"] {
+        background-color: red;
+      }
+
+      /* checks attribute with hypen seperated value */
+      div[name|="content"] {
+        background-color: blue;
+      }
+
+      /* checks attribute with space seperated value */
+      div[name~="card"] {
+        background-color: aqua;
+      }
+
+      /* starts with */
+      div[name ^= "head"]{
+        background-color: lightgreen;
+      }
+
+      /* ends with */
+      div[name $= "on"]{
+        background-color: lawngreen;
+      }
+
+      /* in between */
+      div[name *= "oo"]{
+        background-color: tomato;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Learn Attribute Selectors</h1>
+
+    <div name="box">box 1</div>
+    <div name="box wrapper">box 2</div>
+    <div name="content-container">box 3</div>
+    <div name="card container">box 4</div>
+    <div name="header">box 5</div>
+    <div name="icon">box 6</div>
+    <div name="footer">box 7</div>
+
+  </body>
+</html>

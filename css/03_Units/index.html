@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box1 {
+        height: 400px;
+        width: 400px;
+        background-color: yellow;
+      }
+      .box2 {
+        height: 50vh;
+        width: 50vw;
+        background-color: tomato;
+      }
+
+      .parent {
+        height: 50vh;
+        width: 50vw;
+        background-color: lawngreen;
+      }
+
+      .child {
+        height: 50%;
+        width: 50%;
+        background-color: black;
+      }
+
+      /* 1em = 16px (default) depends upon current element's fontsize */
+      .box3 {
+        height: 5em;
+        width: 5em;
+        font-size: 50px;
+        background-color: aqua;
+      }
+
+      /* 1rem = 16px (default) depends upon root element's fontsize */
+      html{
+        font-size: 20px;
+      }
+
+      .box4 {
+        height: 5rem;
+        width: 5rem;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Learn CSS Units</h1>
+    <!-- 
+        There are 5 types of units
+        1) px => FIXED / ABSOLUTE UNIT
+        2) vh and vw -> viewport height and width => RELATIVE UNIT
+        3) % => RELATIVE UNIT
+        4) em => RELATIVE UNIT
+        5) rem => RELATIVE UNIT
+    -->
+
+    <!-- <div class="box1"></div> -->
+
+    <!-- <div class="box2"></div> -->
+
+    <!-- <div class="parent">
+      <div class="child"></div>
+    </div> -->
+
+    <!-- <div class="box3"> em unit </div> -->
+
+    <div class="box4">rem unit</div>
+  </body>
+</html>

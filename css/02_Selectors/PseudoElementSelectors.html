@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      p::first-letter {
+        font-size: 80px;
+        color: red;
+      }
+
+      p::first-line {
+        color: blue;
+      }
+
+      p::selection {
+        background-color: black;
+        color: white;
+      }
+
+      h1::before {
+        content: "⭐";
+        font-size: 50px;
+      }
+
+      h1::after {
+        content: "🚀";
+      }
+
+      ul > li::marker {
+        color: red;
+      }
+
+      
+    </style>
+  </head>
+  <body>
+    <h1>Learn Pseudo Elements Selectors</h1>
+    <!-- 
+    - it is denoted by double colon (::)
+    1) ::first-letter
+    2) ::first-line
+    3) ::selection
+    4) ::after
+    5) ::before
+    6) ::marker
+    -->
+
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus ab
+      ipsum a sed, vel excepturi vero debitis fugit beatae sit quidem
+      repudiandae facere architecto dolor voluptate cumque voluptatem error
+      recusandae, blanditiis eligendi? Ipsum veniam assumenda placeat, veritatis
+      eaque provident sunt iure, inventore, nostrum voluptatibus explicabo. Quos
+      architecto repellendus, accusantium placeat illo exercitationem quod
+      quibusdam voluptates optio voluptas. Facilis, in consectetur similique
+      velit ipsam numquam doloremque obcaecati qui debitis cumque ut voluptates
+      voluptatem atque illo facere dolore maiores iusto! Voluptas possimus
+      reprehenderit modi, rem omnis amet velit mollitia, eos iure aspernatur
+      voluptate? Suscipit itaque facere ex, maxime aliquid quia deleniti eaque
+      officia, dolore impedit doloremque delectus! Perspiciatis architecto illo
+      quas unde est nihil maiores aperiam consequatur, animi sit enim culpa quod
+      quae molestias quisquam maxime, blanditiis laudantium? Molestiae voluptate
+      tempore consequatur tenetur praesentium, odio totam doloribus architecto
+      nobis amet sapiente deserunt maiores dicta repudiandae! At animi officia,
+      molestiae mollitia atque ad exercitationem perferendis vitae sed accusamus
+      labore vel, quam eligendi, natus neque quasi alias quia nam. Officiis, a.
+      Dicta quisquam, a dolorem quaerat beatae culpa. Reiciendis cum officia
+      explicabo facilis, id, alias iure quisquam nobis adipisci commodi aliquid
+      nesciunt perspiciatis laborum minima repellendus ab non neque
+      voluptatibus. Ex unde labore doloremque.
+    </p>
+
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+    </ul>
+  </body>
+</html>
