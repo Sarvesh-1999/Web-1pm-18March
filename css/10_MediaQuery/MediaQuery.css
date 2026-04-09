@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+  background-color: red;
+  color: white;
+  transition: 0.3s;
+}
+/* LAPTOP LARGE */
+@media (max-width: 1440px) {
+  h1 {
+    background-color: yellow;
+    color: black;
+  }
+}
+
+/* LAPTOP M */
+@media (max-width: 1024px) {
+  h1 {
+    background-color: blue;
+    color: white;
+  }
+}
+
+/* TABLET  */
+@media (max-width: 768px) {
+  h1 {
+    background-color: gray;
+    color: black;
+  }
+}
+
+/* MOBILE L  */
+@media (max-width: 425px) {
+  h1 {
+    background-color: aqua;
+    color: black;
+    font-size: 14px;
+  }
+}
+
+/* MOBILE M  */
+@media (max-width: 375px) {
+  h1 {
+    background-color: pink;
+    color: black;
+  }
+}
+
+/* MOBILE S  */
+@media (max-width: 320px) {
+  h1 {
+    background-color: skyblue;
+    color: black;
+    font-size: 12px;
+  }
+}
