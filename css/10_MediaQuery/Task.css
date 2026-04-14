@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* NAVBAR */
+.navbar {
+  padding: 10px 40px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.logo {
+  font-size: 25px;
+  font-weight: 800;
+}
+.logo > span {
+  color: orchid;
+}
+.navlinks {
+  display: flex;
+  gap: 30px;
+  font-weight: 600;
+}
+
+.navlinks > a {
+  transition: 0.3s;
+}
+
+.navlinks > a:hover {
+  color: orchid;
+}
+
+.hamburger {
+  transform: rotate(90deg);
+  display: none;
+}
+
+@media (max-width: 425px) {
+  .navlinks > a {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/* HERO SECTION */
+.hero-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #e7ebfc;
+}
+
+.hero-image {
+  height: 100vh;
+  padding: 20px;
+  display: grid;
+  place-items: center;
+}
+
+.hero-image > img {
+  height: 400px;
+  /* width: 100%; */
+  /* object-fit: contain; */
+  margin-top: 40px;
+}
+
+.hero-content {
+  height: 100vh;
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero-content > h1 {
+  font-size: 50px;
+  font-weight: 900;
+  color: orchid;
+}
+.hero-content > h3 {
+  font-size: 30px;
+  font-weight: 800;
+  margin-top: -20px;
+}
+.hero-content > p {
+  text-align: center;
+  font-size: 20px;
+  color: gray;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+@media (max-width: 1024px) {
+  .hero-content > h1 {
+    font-size: 30px;
+  }
+  .hero-content > h3 {
+    font-size: 20px;
+    margin-top: -10px;
+  }
+  .hero-content > p {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 425px) {
+  .hero-content > h1 {
+    font-size: 25px;
+  }
+
+  .hero-content > h3 {
+    font-size: 15px;
+    margin-top: -5px;
+  }
+
+  .hero-content > p {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  
+  .hero-image > img {
+    height: 250px;
+  }
+}
